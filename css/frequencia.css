@@ -1,0 +1,94 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f2f6ff;
+}
+
+/* Cabeçalho */
+
+header{
+    background:#0b5ed7;
+    color:white;
+    padding:20px;
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* Layout */
+
+.container{
+    display:flex;
+    gap:20px;
+    padding:20px;
+    height:500px;
+}
+
+/* Card */
+
+.card{
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    flex:1;
+}
+
+/* Presença */
+
+.presenca{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Círculo da presença */
+
+.circle{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    background: conic-gradient(#0b5ed7 92%, #e6e6e6 0%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:30px 0;
+}
+
+.inside{
+    width:160px;
+    height:160px;
+    background:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    font-weight:bold;
+    color:#0b5ed7;
+}
+
+/* Agenda */
+
+.falta{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+    cursor:pointer;
+    transition:0.2s;
+}
+
+.falta:hover{
+    background:#eef4ff;
+}
+
+/* Aula faltada */
+
+#aula{
+    margin-top:20px;
+    padding:15px;
+    background:#eef4ff;
+    border-radius:8px;
+    display:none;
+}
