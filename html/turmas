@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Turmas - Colégio Yvone Pimentel</title>
+  <link rel="stylesheet" href="turmas.css">
+</head>
+<body>
+
+  <header>
+    <h1>Colégio Yvone Pimentel</h1>
+    <p>Área das Turmas • 2025</p>
+  </header>
+
+  <main class="container">
+    <section class="turma-card">
+      <div class="turma-header">
+        <h2>3º Ano A - Manhã</h2>
+        <span class="ano">Ensino Médio</span>
+      </div>
+
+      <table class="boletim">
+        <thead>
+          <tr>
+            <th>Matéria</th>
+            <th>Professor</th>
+            <th>Nota 1º Tri</th>
+            <th>Nota 2º Tri</th>
+            <th>Média</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Português</td>
+            <td>Profª. Mariana</td>
+            <td>8,2</td>
+            <td>7,9</td>
+            <td class="media">8,05</td>
+          </tr>
+          <tr>
+            <td>Matemática</td>
+            <td>Prof. Lucas</td>
+            <td>6,5</td>
+            <td>7,8</td>
+            <td class="media">7,15</td>
+          </tr>
+          <tr>
+            <td>História</td>
+            <td>Prof. Rafael</td>
+            <td>9,0</td>
+            <td>8,7</td>
+            <td class="media">8,85</td>
+          </tr>
+          <tr>
+            <td>Física</td>
+            <td>Profª. Carla</td>
+            <td>5,8</td>
+            <td>6,4</td>
+            <td class="media media-baixa">6,10</td>
+          </tr>
+          <tr>
+            <td>Inglês</td>
+            <td>Prof. Daniel</td>
+            <td>9,5</td>
+            <td>9,8</td>
+            <td class="media">9,65</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="turma-card">
+      <div class="turma-header">
+        <h2>2º Ano B - Tarde</h2>
+        <span class="ano">Ensino Médio</span>
+      </div>
+
+      <table class="boletim">
+        <thead>
+          <tr>
+            <th>Matéria</th>
+            <th>Professor</th>
+            <th>Nota 1º Tri</th>
+            <th>Nota 2º tri</th>
+            <th>Média</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Química</td>
+            <td>Profª. Juliana</td>
+            <td>7,4</td>
+            <td>8,1</td>
+            <td class="media">7,75</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Colégio Yvone Pimentel © 2025 •</p>
+  </footer>
+
+</body>
+</html>
