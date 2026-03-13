@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f5f5f5;
+    color: #222;
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  
+  header {
+    background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+    text-align: center;
+    padding: 2.5rem 1rem 2rem;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  
+  header h1 {
+    font-size: 2.4rem;
+    color: #0066cc;
+    margin-bottom: 0.4rem;
+  }
+  
+  header p {
+    color: #555;
+    font-size: 1.05rem;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    gap: 2.5rem;
+  }
+  
+  .turma-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+  }
+  
+  .turma-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+  }
+  
+  .turma-header {
+    background: #f8f9fa;
+    padding: 1.4rem 1.8rem;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .turma-header h2 {
+    font-size: 1.55rem;
+    color: #222;
+  }
+  
+  .ano {
+    background-color: #e0e7ff;
+    color: #3b82f6;
+    padding: 0.35rem 0.9rem;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  
+  table.boletim {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 1rem 1.4rem;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f0f0;
+    color: #444;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+  
+  td {
+    border-top: 1px solid #eee;
+    font-size: 1.02rem;
+  }
+  
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .media {
+    font-weight: bold;
+    color: #006600;
+  }
+  
+  .media-baixa {
+    color: #cc0000;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2.5rem 1rem;
+    color: #666;
+    font-size: 0.92rem;
+    border-top: 1px solid #ddd;
+    margin-top: 3rem;
+    background: #fff;
+  }
+  
+  /* Responsividade básica */
+  @media (max-width: 680px) {
+    .turma-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    th, td {
+      padding: 0.9rem 1rem;
+      font-size: 0.96rem;
+    }
+    
+    table {
+      font-size: 0.94rem;
+    }
+  }
