@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrar - Colégio Yvone Pimentel</title>
+  <link rel="stylesheet" href="entrar.css">
+</head>
+<body>
+
+  <header>
+    <h1>Área do Aluno YP</h1>
+    <div class="user-info">
+      <!-- Antes do login: vazio ou com texto sutil -->
+      <span>Faça login para acessar</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="login-card">
+      <h2>Entrar na sua conta</h2>
+      <p class="descricao">Use seu Gmail institucional ou CGM e senha para acessar o portal.</p>
+
+      <form id="login-form" onsubmit="fazerLogin(event)">
+        <div class="form-group">
+          <label for="identificador">Gmail ou CGM</label>
+          <input 
+            type="text" 
+            id="identificador" 
+            name="identificador" 
+            placeholder="exemplo@escola.com ou 123456789" 
+            required 
+            autocomplete="username"
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="senha">Senha</label>
+          <input 
+            type="password" 
+            id="senha" 
+            name="senha" 
+            placeholder="••••••••" 
+            required 
+            autocomplete="current-password"
+          >
+        </div>
+
+        <button type="submit" class="btn-entrar">Entrar</button>
+
+      </form>
+    </section>
+
+    <!-- Mensagem de erro (oculta por padrão) -->
+    <div class="erro oculto" id="erro-msg">
+      <p>Credenciais inválidas. Verifique seu Gmail/CGM e senha.</p>
+    </div>
+
+  </main>
+
+
+  <script>
+    function fazerLogin(event) {
+      event.preventDefault();
+
+      const identificador = document.getElementById('identificador').value.trim();
+      const senha = document.getElementById('senha').value;
+
+      if (identificador && senha.length >= 4) {
+        // Simulação de login bem-sucedido
+        alert("Login realizado! (simulação)\nRedirecionando para o portal...");
+        // window.location.href = "/turmas.html";  // ← quando tiver o sistema real
+      } else {
+        document.getElementById('erro-msg').classList.remove('oculto');
+        setTimeout(() => {
+          document.getElementById('erro-msg').classList.add('oculto');
+        }, 4000);
+      }
+    }
+  </script>
+
+</body>
+</html>
