@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Entrar - Colégio Yvone Pimentel</title>
-  <link rel="stylesheet" href="entrar.css">
+  <link rel="stylesheet" href="../css/login.css">
 </head>
 <body>
 
@@ -70,7 +70,7 @@
       if (identificador && senha.length >= 4) {
         // Simulação de login bem-sucedido
         alert("Login realizado! (simulação)\nRedirecionando para o portal...");
-        // window.location.href = "/turmas.html";  // ← quando tiver o sistema real
+        window.location.href = "inicial.html";  // ← quando tiver o sistema real
       } else {
         document.getElementById('erro-msg').classList.remove('oculto');
         setTimeout(() => {
