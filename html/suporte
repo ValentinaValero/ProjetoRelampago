@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suporte - Colégio Yvone Pimentel</title>
+  <link rel="stylesheet" href="suporte.css">
+</head>
+<body>
+
+    <header>
+        <h1>Área do Aluno YP</h1>
+        <div class="user-info">
+            <span>Olá, João Silva!</span>
+        </div>
+    </header>
+
+  <main class="container">
+
+    <section class="suporte-card" id="form-card">
+      <h2>Envie sua mensagem para a coordenação</h2>
+      <p class="descricao">Sua solicitação, reclamação ou sugestão será enviada diretamente associada à sua conta logada.<br>Responderemos o mais breve possível.</p>
+
+      <form id="suporte-form" onsubmit="enviarMensagem(event)">
+        <div class="form-group">
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="8" placeholder="Descreva aqui sua solicitação, reclamação, dúvida ou sugestão..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+      </form>
+    </section>
+
+    <section class="suporte-card sucesso oculto" id="sucesso-card">
+      <div class="icone-sucesso">✓</div>
+      <h2>Mensagem enviada com sucesso!</h2>
+      <p>Obrigado pelo contato.<br>Você receberá uma resposta diretamente na sua conta ou pelo canal vinculado a ela.</p>
+      <button class="btn-voltar" onclick="voltarFormulario()">Enviar outra mensagem</button>
+    </section>
+
+  </main>
+
+  <script>
+    function enviarMensagem(event) {
+      event.preventDefault();
+      
+
+      document.getElementById('form-card').classList.add('oculto');
+      document.getElementById('sucesso-card').classList.remove('oculto');
+      
+      document.getElementById('suporte-form').reset();
+    }
+
+    function voltarFormulario() {
+      document.getElementById('sucesso-card').classList.add('oculto');
+      document.getElementById('form-card').classList.remove('oculto');
+    }
+  </script>
+
+</body>
+</html>
