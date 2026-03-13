@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno - ADS</title>
+    <style>
+     </style>
+</head>
+<body>
+
+    <header>
+        <h1>Área do Aluno YP</h1>
+        <div class="user-info">
+            <span>Olá, João Silva!</span>
+            <!-- Foto pequena removida para ficar mais clean -->
+        </div>
+    </header>
+
+    <section class="profile-section">
+        <!-- Foto genérica neutra / branca / avatar padrão -->
+        <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" 
+             alt="Foto de perfil do aluno" 
+             class="profile-pic">
+        
+        <div class="profile-name">João Silva</div>
+        <div class="profile-info">
+            Análise e Desenvolvimento de Sistemas (ADS) • 3º Ano do Ensino Médio<br>
+            Matrícula: 202300456
+        </div>
+    </section>
+
+    <section class="cards-container">
+        <div class="cards-grid">
+
+            <div class="card">
+                <span class="card-icon">📊</span>
+                <h3>Notas</h3>
+                <button onclick="alert('Carregando suas notas... (simulação)')">Ver Boletim Completo</button>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">✅</span>
+                <h3>Frequência</h3>
+                <button onclick="alert('Detalhes de frequência... (simulação)')">Ver Frequência Detalhada</button>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">⏰</span>
+                <h3>Horário de Aulas</h3>
+                <button onclick="alert('Horário completo da semana... (simulação)')">Ver Horário Semanal</button>
+            </div>
+
+            <div class="card">
+                <span class="card-icon">💬</span>
+                <h3>Suporte ao Aluno</h3>
+                <p>Dúvidas, solicitações ou problemas?<br>Fale diretamente com a coordenação</p>
+                <button onclick="alert('Abrindo canal de suporte... (simulação)')">Abrir Suporte</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Centro Universitário YP • Todos os direitos reservados<br>
+        Área do Aluno • Sistema v2.3
+    </footer>
+
+</body>
+</html>
